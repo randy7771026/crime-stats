@@ -15,4 +15,8 @@ So all of that plus api collection of meta data from social networks but geoloca
 
 https://northsidevillagewest.nextdoor.com/news_feed/?post=29950752
 
-because their are end points, do they want us to and should we.
+because there are end points, do they want us to and should we.
+
+Note to self but y'all can read and do:
+
+ If for testing and demo you go back three months in archive and build layers on a map of different types of crime then give them a date range choice and allow to animate one day at time and how many days to have on map at one time then a button to freeze and after freeze pens with hover over bubble UCR info.  Thanks that is the essence of Phase I.  Phase two is to add similar for social media scrapes or api calls.
