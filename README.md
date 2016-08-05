@@ -1,4 +1,9 @@
 # crime-stats
+
+So we begin with this note:
+
+https://slack-files.com/T0F09327Q-F1YMMBWTD-ef8b192cf6
+
 Visualize crime stats for area of Greater Northside Management District
 
 It starts with:
