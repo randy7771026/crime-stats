@@ -1,4 +1,4 @@
-﻿var acc = document.getElementsByClassName("accordion");
+var acc = document.getElementsByClassName("accordion");
 var i;
 var coords = [29.801902, -95.365821];
 var ocoords = [29.801902, -95.365821];
