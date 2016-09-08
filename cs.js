@@ -138,11 +138,11 @@ L.CRS.EPSG3857.unproject = function (point){ // Point -> LatLng
 
 
 
-/*	var events = JSON.parse(raw); */
+/*	var events = JSON.parse(raw); 
 	alert(events[0].Offense);
 	alert(events[1].Offense);
 
-/*
+
 for (i = 0; i < acc.length; i++){
     acc[i].onclick = function(){
     	  
