@@ -32,19 +32,34 @@ var events = data; //   JSON.parse(data)
 
 
  for(i = 0; i < events.length; i++){
-    console.log("events[", i,"] ", events[i],"x", events[i].geometry.x); 
+ 	if ( events[i].attributes.Premise_Type !== "Residence or House" ) {
+ 	if ( events[i].attributes.SNB_No == 51 ||
+ 	     events[i].attributes.SNB_No == 45 ||
+ 	     events[i].attributes.SNB_No == 13 ||
+ 	     events[i].attributes.SNB_No == 15 ||
+ 	     events[i].attributes.SNB_No == 48 ||
+ 	     events[i].attributes.SNB_No == 51 ||
+ 	     events[i].attributes.SNB_No == 12 ||
+ 	     events[i].attributes.SNB_No == 46 
+ 	 )
+    	 
+ 	{
+   // console.log("events[", i,"] ", events[i],"x", events[i].geometry.x); 
      ocoords[0] = events[i].geometry.x;
      ocoords[1] = events[i].geometry.y;
-     console.log("ocoords",ocoords);
+   //  console.log("ocoords",ocoords);
      
      var point = new L.Point(events[i].geometry.x, events[i].geometry.y);
-     console.log("point",point);
+   //  console.log("point",point);
      
-     var earthRadius = 6378137;
+   //  var earthRadius = 6378137;
      var latlng = L.Projection.SphericalMercator.unproject(
                point);  //.divideBy(earthRadius));
      console.log("latlng",latlng); //returns latlon
      new L.Marker([latlng.lat, latlng.lng],{bounceOnAdd: true}).addTo(mymap);
+     
+    }
+    } 
     
     };
 
